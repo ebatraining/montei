@@ -1,0 +1,347 @@
+* {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+
+  body{
+    font-family: "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    font-weight: 400;
+    color: #444444;
+    background-image: url("../image/back.jpg");
+    background-size: 100% auto;
+  }
+
+/*================================================================================
+    h1：ヘッダー画像ロゴに使用
+    h2：各見出しに使用（「コースメニュー」「ピックアップメニュー」等）
+    h3：はじめの「門庭は肉屋直営店です」、「こだわりの味」、
+        ピックアップメニューの料理名に使用
+    h4：コースメニューのコース名に使用
+================================================================================*/
+  h1{
+    margin: 0;
+  }
+
+  h1 img{
+    margin: 0;
+  }
+
+  h2{
+    display: inline-block;
+    text-align: center;
+    border-bottom: solid 1px #444444;
+    font-family: "Sawarabi Mincho";
+    font-size: 350%;
+    font-weight: 700;
+    margin-bottom: 2%;
+  }
+
+  h3{
+    font-size: 150%;
+  }
+
+  h4{
+    text-align: right;
+    font-size: 220%;
+    margin: 0;
+  }
+
+  header{
+    height:8.5vw;
+    text-align: left;
+  }
+
+  header p{
+    margin-right: 1%;
+    text-align: right;
+    font-size: 110%;
+    font-weight: 700;
+    position: absolute;
+    top: 0%;
+    left: 72%;
+  }
+
+  .first{
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../image/niku.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 660px;
+  }
+
+  #logo{
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 15%;
+    height: 45%;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.6);
+    z-index: 9999;
+  }
+
+  #logo img{
+    width: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .swiper-container{
+    display: none;
+  }
+
+  .swiper-container img{
+
+  }
+
+  main{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intro_wrap img{
+    width: 45%;
+    height: auto;
+  }
+
+  .intro1,.intro2{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 90%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+
+  .intro_wrap img{
+    margin: 3%;
+    float: left;
+    display: inline;
+    vertical-align: middle;
+  }
+
+  .intro1{
+
+  }
+
+  .intro2{
+
+  }
+
+  .intro_text{
+    width: 40%;
+    margin: 3%;
+    margin-top: 15%;
+    text-align: center;
+    float: right;
+    font-size: inherit;
+  }
+
+  .intro_text p{
+    font-size: 110%;
+  }
+
+  .menu1, .menu2, .shop, .reserve{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .list1{
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2%;
+    overflow: hidden;
+  }
+
+  .list1 img{
+    margin: 3%;
+    float: left;
+    width: 25%;
+  }
+
+  .list_text{
+    width: 60%;
+    margin: 3%;
+    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+    font-weight: 700;
+    float: right;
+  }
+
+  .price{
+    font-size: 220%;
+    color:#a40101;
+    text-align: right;
+    margin: 0;
+  }
+
+  .content{
+    font-size: 130%;
+    line-height: 1.5em;
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
+
+  .attention{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2%;
+    text-align: left;
+    border: solid 1px rgba(68, 68, 68, 0.7);
+    border-radius: 10px;
+  }
+
+  .list2{
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+  }
+
+  .list2 img{
+    object-fit: cover;
+    margin-top: 2%;
+  }
+
+  .list2 img + .list_text{
+    float: none;
+    width: 100%;
+    padding-bottom: 2%;
+  }
+
+  #note{
+    font-size: 120%;
+    line-height: 1.5em;
+    margin-top: 0;
+  }
+
+  #naikan{
+    overflow: hidden;
+  }
+
+  .mise{
+    width: 33%;
+    float: left;
+  }
+
+  .mise img{
+    padding-right: 2%;
+  }
+
+  table{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    padding: 2%;
+    table-layout: fixed;
+    font-family: 'Meiryo UI','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  }
+
+  table td{
+    overflow-wrap : break-word;
+    padding-top: 1%;
+  }
+
+  .tdl{
+    width:30%;
+    text-align: center;
+  }
+
+  .tdr{
+    width: 60%;
+    text-align: left;
+  }
+
+  #map{
+    width: 100%;
+    margin: 2% 0;
+  }
+
+  #map iframe{
+    width: 100%;
+  }
+
+  .reserve img{
+    width: 100%;
+  }
+
+  .reserve p{
+    font-size: 110%;
+    font-weight: 700;
+  }
+
+  .reserve p:nth-of-type(2n){
+    text-decoration: underline;
+  }
+
+  .tel{
+    width:60%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+    background-color: #444444;
+    font-size: 200%;
+  }
+
+  .tel p{
+    padding:1%;
+    letter-spacing: 0.1em;
+  }
+
+  .tel a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  #sns img{
+    width: 72px;
+    height: 72px;
+    margin: 1%;
+  }
+
+  #pagetop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  #pagetop a{
+    display: block;
+    background-color: rgba(68, 68, 68, 0.7);
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+  }
+
+  #pagetop a:hover{
+    position: relative;
+    background-color: rgba(68, 68, 68, 1);
+  }
+
+  footer{
+    text-align: center;
+    margin-top: 2%;
+    padding: 5% 0;
+    background-color: rgba(68, 68, 68, 0.8);
+    color: #ffffff;
+  }
+
+  .fade-up {
+  transition: opacity 0.7s;
+  -moz-transition: opacity 0.7s;
+  -webkit-transition: opacity 0.7s;
+  -o-transition: opacity 0.7s;
+  transition: transform 0.7s;
+  -moz-transition: transform 0.7s;
+  -webkit-transition: transform 0.7s;
+  -o-transition: transform 0.7s;
+}

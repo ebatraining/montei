@@ -1,0 +1,351 @@
+@media screen and (max-width:767px){
+
+  * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+
+  body{
+    font-family: "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    font-weight: 400;
+    color: #444444;
+    background-image: url("../image/back.jpg");
+    background-size: 100% auto;
+  }
+
+/*================================================================================
+    h1：ヘッダー画像ロゴに使用
+    h2：各見出しに使用（「コースメニュー」「ピックアップメニュー」等）
+    h3：はじめの「門庭は肉屋直営店です」、「こだわりの味」、
+        ピックアップメニューの料理名に使用
+    h4：コースメニューのコース名に使用
+================================================================================*/
+  h1{
+    margin: 0;
+  }
+
+  h1 img{
+    width: 15vw;
+  }
+
+  h2{
+    display: inline-block;
+    text-align: center;
+    border-bottom: solid 1px #444444;
+    font-family: "Sawarabi Mincho";
+    font-size: 7vw;
+    font-weight: 700;
+    margin-bottom: 2%;
+  }
+
+  h3{
+    font-size: 5vw;
+  }
+
+  h4{
+    text-align: right;
+    font-size: 6vw;
+    margin: 0;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1%;
+    text-align: right;
+    font-size: 1.8vw;
+    font-weight: 700;
+  }
+
+  .first{
+    text-align: center;
+    position: relative;
+    margin-bottom: 4%;
+  }
+
+  #logo{
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 15%;
+    height: 30%;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.6);
+    z-index: 9999;
+  }
+
+  #logo img{
+    width: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .swiper-container{
+    width: 100%;
+    height: 60vw;
+  }
+
+  .swiper-container img{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    filter: saturate(1.2);
+  }
+
+  main{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intro_wrap{
+
+  }
+
+  .intro1,.intro2{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 90%;
+    margin-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intro_wrap img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .intro1{
+
+  }
+
+  .intro2{
+
+  }
+
+  .intro_text{
+    width: 100%;
+    margin-top: 3%;
+    padding-bottom: 2%;
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  .menu1, .menu2, .shop, .reserve{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .list1{
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 4%;
+    width: 100%;
+  }
+
+  .list1 img{
+    width: 70%;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 3%;
+  }
+
+  .list_text{
+    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+    font-weight: 700;
+    margin: 2%;
+    padding-bottom: 2%;
+  }
+
+  .price{
+    font-size: 6vw;
+    color:#a40101;
+    text-align: right;
+    margin: 0;
+  }
+
+  .content{
+    font-size: 3.5vw;
+    line-height: 1.5em;
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
+
+  .attention{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2%;
+    text-align: left;
+    border: solid 1px rgba(68, 68, 68, 0.7);
+    border-radius: 10px;
+    font-size: 2.6vw;
+  }
+
+  .list2{
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .list2 p{
+    margin: 0;
+    margin-top: -3%;
+  }
+
+  .list2 img{
+    width: 100%;
+  }
+
+  #note{
+    font-size: 3.5vw;
+    line-height: 1.5em;
+    margin-top: 0;
+  }
+
+  #naikan{
+    margin-bottom: 3%;
+  }
+
+  #naikan img{
+    width: 50%;
+    height: 50%;
+  }
+
+  .mise{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mise p{
+    flex-grow: 1;
+  }
+
+  table{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    padding: 2%;
+    table-layout: fixed;
+    font-family: 'Meiryo UI','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+    font-size: 2.6vw;
+  }
+
+  table td{
+    overflow-wrap : break-word;
+    padding-top: 1%;
+  }
+
+  .tdl{
+    width:30%;
+    text-align: center;
+  }
+
+  .tdr{
+    width: 60%;
+    text-align: left;
+  }
+
+  #map{
+    width: 100%;
+    margin: 2% 0;
+  }
+
+  #map iframe{
+    height: 300px;
+    width: 100%;
+  }
+
+  .reserve img{
+    width: 100%;
+  }
+
+  .reserve p{
+    font-size: 2.8vw;
+    font-weight: 700;
+  }
+
+  .reserve p:nth-of-type(2n){
+    text-decoration: underline;
+  }
+
+  .tel{
+    width:60%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+    background-color: #444444;
+    font-size: 200%;
+  }
+
+  .tel p{
+    padding:5%;
+    letter-spacing: 0.1em;
+  }
+
+  .tel a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  #sns img{
+    width: 12%;
+    height: 12%;
+    margin: 1%;
+  }
+
+  #pagetop{
+    width: 15%;
+    margin-left:auto;
+  }
+
+  #pagetop a{
+    padding: 10%;
+    background-color: rgba(68, 68, 68, 0.7);
+    text-decoration: none;
+  }
+
+  #pagetop a::after{
+    top: 2em;
+    content: '▲TOP';
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 3vw;
+  }
+
+  #pagetop i{
+    display: none;
+  }
+
+  footer{
+    text-align: center;
+    margin-top: 2%;
+    padding: 5% 0;
+    background-color: rgba(68, 68, 68, 0.8);
+    color: #ffffff;
+  }
+
+  .fade-up {
+  transition: opacity 0.7s;
+  -moz-transition: opacity 0.7s;
+  -webkit-transition: opacity 0.7s;
+  -o-transition: opacity 0.7s;
+  transition: transform 0.7s;
+  -moz-transition: transform 0.7s;
+  -webkit-transition: transform 0.7s;
+  -o-transition: transform 0.7s;
+}
+
+}
