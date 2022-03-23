@@ -1,4 +1,8 @@
+
 @media screen and (min-width:768px){
+  .sp{
+    display: none;
+  }
 
   * {
       -webkit-box-sizing: border-box;
@@ -15,6 +19,25 @@
     background-image: url("../image/back.jpg");
     background-size: 100% auto;
   }
+
+/* デフォルトのbuttonスタイルをリセット */
+button{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;/* デフォルトスタイルを無効 */
+  background-color: tranceparent;/* 透明に*/
+  border:0;
+  border-radius:0;
+  color:inherit;/* 親要素の色を使用する */
+  font:inherit;
+  cursor:pointer;
+  outline:none;
+  margin: 0;
+  padding: 0;
+  vertical-align:middle;
+}
+
+
 
 /*================================================================================
     h1：ヘッダー画像ロゴに使用
@@ -69,7 +92,7 @@
     margin-bottom: 2%;
   }
 
-  #logo{
+  /* #logo{
     background-color: rgba(255, 255, 255, 0.6);
     position: absolute;
     top: 0;
@@ -80,6 +103,20 @@
     width: 15%;
     height: 45%;
     box-shadow: 5px 10px 10px rgba(0,0,0,0.6);
+    z-index: 9999;
+  } */
+
+  #logo{
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    position: absolute;
+    top: 75%;
+    /* left: 0; */
+    right: 0%;
+    /* bottom: 20%; */
+    margin: auto;
+    width: 25%;
+    height: auto;
+    /* box-shadow: 5px 10px 10px rgb(0 0 0 / 60%); */
     z-index: 9999;
   }
 
@@ -201,14 +238,20 @@
   }
 
   .list2{
-    background-color: rgba(255, 255, 255, 0.7);
+    /* background-color: rgba(255, 255, 255, 0.7); */
     display: flex;
     justify-content: space-between;
+  }
+
+  .menu2_wrapper{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
   }
 
   .list2 img{
     object-fit: cover;
   }
+
 
   #note{
     font-size: 120%;
@@ -332,6 +375,208 @@
   -moz-transition: transform 0.7s;
   -webkit-transition: transform 0.7s;
   -o-transition: transform 0.7s;
+}
+
+/*ーーーーーーーーーーーーー modal ーーーーーーーーーーーーーーー*/
+
+/* Remodal のモーダル */
+.remodal img{
+  width: 100%;
+}
+
+/* 普通のモーダル */
+.list_2_item .list_2_img .list_2_item_a:hover {
+      opacity: 0.8;
+    }
+
+.jyusyo_ul .jyusyo_li .jyusyo_a .jyusyo_img {
+      width: 200px;
+    }
+
+.modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+      text-align: center;
+      z-index: 9999;
+    }
+
+.bigimg {
+      position: absolute;
+      width: 80%;
+      max-width: 800px;
+      top: 50%;
+      transform:translateY(-50%);
+      left: 0;
+      right: 0;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: #fff;
+      padding:80px 30px;
+      border-radius: 5px;
+    }
+
+
+.close-btn {
+      color: #fff;
+      font-size: 40px;
+      position: absolute;
+      right: 10%;
+      top: 5%;
+    }
+
+.close-btn a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+
+}
+
+@media (max-width: 767px){
+  .pc{
+    display: none;
+  }
+
+  .img_item{
+width: 45px;
+height: auto;
+margin-right:10px;
+  }
+
+  .tel_img{
+    width: 100%;
+  }
+
+  .tel_nav{
+    display: flex;
+    align-items: center;
+  }
+
+/*ーーーーーーnavタグ　基本の指定ーーーーーー*/
+
+nav{
+  font-size:16px;
+}
+
+nav li{
+  list-style:none;
+}
+
+nav a{
+  text-decoration:none;
+  color:#fff;
+}
+
+/* ーーーーーー以下、ハンバーガーボタンーーーーーー */
+
+/* ハンバーガーボタン 外枠 親要素 */
+.burger_btn{
+  display: block;
+  width: 39px;
+  height: 39px;
+  position:relative;
+  z-index:3;
+  border:none;
+}
+
+/* ハンバーガーボタン spanタグ 基本 */
+.bar{
+width:20px;
+height: 1px;
+display: block;
+position:absolute;
+left: 50%;
+transform:translateX(-50%);
+background-color: #444;
+}
+
+.bar_top{
+top:10px;
+}
+
+.bar_mid{
+  top:50%;
+  transform:translate(-50%,-50%);
+}
+
+.bar_bottom{
+  bottom:10px;
+}
+
+/* バーガーボタン 3本線がバツになる */
+
+.burger_btn.close .bar_top{
+  transform:translate(-50%,10px) rotate(45deg);
+  transition:transform .3s;
+}
+
+.burger_btn.close .bar_mid{
+  opacity:0;
+  transition:opacity .3s;
+}
+
+.burger_btn.close .bar_bottom{
+transform:translate(-50%,-8px) rotate(-45deg);
+transition:transform .3s;
+}
+
+/* 以下、ハンバーガーメニュー */
+.nav_wrapper{
+  /* visibility:hidden;
+  opacity:0; */
+  width: 100vw;
+  height: 100vh;
+  position:fixed;
+  top: 0;
+  left: 0;
+  transform:translate(100%);
+  transition:all .5s;
+z-index:3;
+}
+
+/* メニューオープン時 背景*/
+.header_nav{
+  width: 100%;
+  height: 100%;
+  background-color: #1B1310;
+  z-index:3;
+}
+
+.nav_list{
+  display: block;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+}
+
+.nav_item{
+  margin-right:0;
+  margin-bottom: 40px;
+}
+
+/* メニューオープン時 */
+/* .nav_wrapper.fade{
+  visibility:visible;
+  opacity:1;
+} */
+
+/* メニューオープンした時に　横にスライドしてくる */
+.nav_wrapper.slide-in{
+  transform:translateX(0);
+}
+
+
+/* ーーーーーーモーダルーーーーーー */
+/* Remodal のモーダル */
+.remodal img{
+  width: 100%;
 }
 
 }
